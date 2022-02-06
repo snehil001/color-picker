@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="p5.js"></script>
+    <script src="p5.sound.min.js"></script>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    
+    <div class="center">
+      <div id="display"> 
+      </div>
+    </div>
+
+    <div class="input center wrapper">
+     Red:<br/>
+    <input type= "range" min="0" max="255" value="248" id="redSlider">
+    </div>
+    
+    <div class="input center wrapper">
+      Green:<br/>
+      <input type="range" min="0" max="255" value="165" id="greenSlider">
+    </div>
+    
+    <div class="input center wrapper">
+      Blue:<br/>
+      <input type="range" min="0" max="255" value="84" id="blueSlider">
+    </div>
+ 
+    <div class="input center wrapper">
+      Alpha:<br/>
+      <input type="range" min="0" max="255" value="255" id="alphaSlider">
+    </div>
+
+    <div class="center wrapper">
+      <div>
+        <input type="text" id="colorI"/>
+      </div>
+      <button onclick="copyKaro()">
+        COPY
+      </button>
+    </div>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>
